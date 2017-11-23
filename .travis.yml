@@ -4,6 +4,9 @@ node_js:
   - "7"
 install:
   - npm install
+env:
+  -MONGODB_URI=mongodb://localhost/chat
+  -MONGODB_TEST=mongodb://localhost/chat_test
 services:
 - mongodb
 script:
